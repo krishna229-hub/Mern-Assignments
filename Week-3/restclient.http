@@ -1,0 +1,48 @@
+GET http://localhost:3000/Users-api/users
+###
+POST http://localhost:3000/Users-api/users
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"krishna",
+    "age":20
+}
+###
+PUT http://localhost:3000/Users-api/users/100
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"chaithanya",
+    "age":21
+}
+###
+DELETE http://localhost:3000/Users-api/users/100
+###
+
+GET http://localhost:3000/Product-api/products
+###
+GET http://localhost:3000/Product-api/products/200
+###r
+POST http://localhost:3000/Product-api/products
+Content-Type: application/json
+
+{
+    "productId":200,
+    "productName":"laptop",
+    "price":1500,
+    "brand":"dell"
+}
+###
+PUT http://localhost:3000/Product-api/products/200
+Content-Type: application/json
+
+{
+    "productId":200,
+    "productName":"laptop",
+    "price":1400,
+    "brand":"dell"
+}
+###
+DELETE http://localhost:3000/Product-api/products/200
