@@ -1,22 +1,23 @@
 import exp from 'express';
 import {productModel} from '../models/ProductModel.js';
 export const productApp=exp.Router();
-//
-let products=[]
-
+let products=[];
 //create product api
 //get req
 productApp.get('/products', async (req,res) => {
-    //
+    //read products from db
     let productList= await productModel.find()
-    res.status(200).json({message:"Products",payload:products})
+    //send res
+    res.status(200).json({message:"Products",payload:productList})
 
 });
 //get with objId
 productApp.get('/products/:id',async (req,res)=>{
+    //get object id from url params
     let objectId=req.params.id;
     //find product in database
     let productObj=await productModel.findById(objectId)
+    //send res
     res.status(201).json({message:"ProductId",payload:productObj})
 });
 
