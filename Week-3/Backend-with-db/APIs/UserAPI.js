@@ -1,5 +1,6 @@
 import exp from 'express'
 import {UserModel} from '../models/UserModel.js'
+//Create mini express application
 export const userApp = exp.Router();
 //local memory database
 let users=[];

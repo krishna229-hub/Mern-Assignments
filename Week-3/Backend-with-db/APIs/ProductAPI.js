@@ -1,5 +1,6 @@
 import exp from 'express';
 import {productModel} from '../models/ProductModel.js';
+//Create mini express application
 export const productApp=exp.Router();
 let products=[];
 //create product api
