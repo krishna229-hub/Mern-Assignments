@@ -1,0 +1,51 @@
+GET http://localhost:4000/user-api/users
+###
+GET http://localhost:4000/user-api/users/697f87a0a31193a2810144e3
+###
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"varun",
+    "password":"varun123",
+    "age":18
+}
+###
+PUT http://localhost:4000/user-api/users/697f87a0a31193a2810144e3
+Content-Type: application/json
+
+{
+    "username":"Krishna",
+    "password":"krishna123",
+    "age":20
+}
+###
+DELETE http://localhost:4000/user-api/users/697f5dfc55d1371ed467b020
+
+
+
+
+GET http://localhost:4000/product-api/products
+###
+GET http://localhost:4000/product-api/products/697f7c7d502198b02ea22075
+
+###
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productname":"Laptop",
+    "price":75000,
+    "brand":"HP"
+}
+###
+PUT http://localhost:4000/product-api/products/697f7c7d502198b02ea22075
+Content-Type: application/json
+
+{
+    "productname":"Laptop",
+    "price":79000,
+    "brand":"Victus"
+}
+###
+DELETE http://localhost:4000/product-api/products/697f86c6a7c9c3610d5d2395
