@@ -23,8 +23,8 @@ Content-Type: application/json
 DELETE http://localhost:4000/user-api/users/697f5dfc55d1371ed467b020
 
 
-
-
+//product
+###
 GET http://localhost:4000/product-api/products
 ###
 GET http://localhost:4000/product-api/products/697f7c7d502198b02ea22075
