@@ -1,0 +1,10 @@
+//authentication
+1.update user 
+2.check for username
+3.if not found,return status error
+4.compare passwords
+5.if not matched,return status error
+6.create route signed token
+7.saved tokem as httpOnly cookie
+8.send token in response
+9.test route

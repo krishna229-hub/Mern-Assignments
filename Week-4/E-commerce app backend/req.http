@@ -1,0 +1,43 @@
+GET http://localhost:4000/user-api/users
+###
+GET http://localhost:4000/user-api/users/698072234489b0edc1aec62b
+###
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"Krishna",
+    "email":"Krishna@gmail.com",
+    "password":"Krishna13",
+    "cart":[]
+}
+
+### user authenticatio req
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "name":"Varun",
+    "password":"Varun123"
+}
+###
+GET http://localhost:4000/user-api/test
+
+
+
+###
+Get http://localhost:4000/product-api/products
+
+###
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "prodname":"Earpods",
+    "price":4000,
+    "brand":"Oneplus"
+}
+###
+PUT http://localhost:4000/user-api/user-cart/user-id/69818e007b6f50d52beee25c/product-id/6980d98e6ee1578a38497c57
+###
+GET http://localhost:4000/user-api/user/69818e007b6f50d52beee25c
