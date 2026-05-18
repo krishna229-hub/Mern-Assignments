@@ -2,6 +2,7 @@ import exp from 'express';
 import {userApp} from './APIs/UserAPI.js'
 import {productApp} from './APIs/ProductAPI.js'
 import {connect} from 'mongoose'
+import cookieParser from "cookie-parser";
 const port =4000
 const app=exp()
 //connect to db server
@@ -20,6 +21,8 @@ connectDB()
 
 //body parser middleware
 app.use(exp.json())
+//
+app.use(cookieParser())
 //user api
 app.use('/user-api',userApp);
 //assign port
@@ -33,5 +36,5 @@ app.use('/product-api',productApp);
 // app.use(errorHandler)
 // default error handler
 app.use((err,req,res,next)=>{
-    res.status(500).json({message:"error",reason:err,message})
+    res.status(500).json({message:"error",reason:err.message})
 })
